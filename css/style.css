@@ -1,0 +1,32 @@
+body{
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+article{
+    height: 300px;
+    width: 300px;
+    background: url(https://source.unsplash.com/random) center/cover no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+div{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 300px;
+}
+
+article:hover>div{
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0px;
+}
